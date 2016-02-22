@@ -1,0 +1,23 @@
+{
+  "name": "webstore",
+  "version": "1.0.0",
+  "description": "hw2",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Halaku/webstore.git"
+  },
+  "author": "Aleksey Solovev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Halaku/webstore/issues"
+  },
+  "homepage": "https://github.com/Halaku/webstore#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1"
+  }
+}

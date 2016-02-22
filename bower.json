@@ -1,0 +1,23 @@
+{
+  "name": "webstore",
+  "description": "hw2",
+  "main": "gulpfile.js",
+  "authors": [
+    "Aleksey Solovev"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-css": "normalize.css#^3.0.3",
+    "jquery": "^2.2.1"
+  }
+}
