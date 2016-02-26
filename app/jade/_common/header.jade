@@ -4,7 +4,7 @@ header.header
 		.container
 			.header__left
 				ul.social__list
-					- var icons = ['fb', 'vk', 'tv']
+					- var icons = ['fb', 'vk', 'tw']
 					each icon in icons
 						li.social__item
 							a(href="#" class="social__link_#{icon}").social__link
@@ -14,12 +14,14 @@ header.header
 	.header__bottom
 		.container
 			a(href="/").logo__link
-				img(src="img/logo_header.png", alt="Cooltech logo").logo__img
+				img(src="img/logo.png", alt="Cooltech logo").logo__img
+				.logo__text Cooltech
 			form.search
 				input(type="text" placeholder="Что будем искать").search__input
 				input(type="submit", value="Найти").search__button
-			ul.menu__list
-				- var links = ['Карта проезда', 'История заказов', 'Корзина']
-				each link in links
-					li.menu__item
-						a(href="#").menu__link= link
+			.menu
+				ul.menu__list
+					- var links = ['Карта проезда', 'История заказов', 'Корзина']
+					each link in links
+						li.menu__item
+							a(href="#").menu__link= link

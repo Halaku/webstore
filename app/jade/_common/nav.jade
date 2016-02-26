@@ -2,7 +2,7 @@ block currentPage
 nav.nav
 	.container
 		ul.nav__list
-			- var links = ['Планшеты', 'Мобильные телефоны', 'Mp3 плееры', 'Персональные компьютеры', 'ноутбуки', 'Аксессуары', 'Бытовая техника']
+			- var links = ['Планшеты', 'Мобильные телефоны', 'Mp3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Аксессуары', 'Бытовая техника']
 			each link in links
 				li.nav__item
 					a(href="#" class="nav__link #{(link == menuActive) ? 'nav__link_active' : ''}")= link

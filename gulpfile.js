@@ -15,7 +15,9 @@ gulp.task('sprite', function() {
         .pipe(plumber())
         .pipe(spritesmith({
             imgName: 'sprite.png',
-            cssName: 'sprite.scss'
+            imgPath: '/img/sprite.png',
+            cssName: 'sprite.scss',
+            padding: 50
         }));
     return spriteData
         .pipe(gulpif(
@@ -24,18 +26,6 @@ gulp.task('sprite', function() {
             gulp.dest('./dev/img')
         ));
 });
-
-
-
-
-
-
-
-
-
-
-
-
 
 gulp.task('jade', function() {
     var YOUR_LOCALS = {};
@@ -47,33 +37,6 @@ gulp.task('jade', function() {
         }))
         .pipe(gulp.dest('./dev'));
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 gulp.task('sass', function() {
     return gulp.src('./app/scss/main.scss')
@@ -100,7 +63,7 @@ gulp.task('images', function() {
 });
 
 gulp.task('fonts', function() {
-    gulp.src('./app/fonts')
+    gulp.src('./app/fonts/*.*')
         .pipe(gulp.dest('./dev/fonts'));
 });
 
@@ -123,7 +86,7 @@ gulp.task('watch', function() {
     gulp.watch('./app/jade/**/*.jade', ['jade']);
 });
 
-gulp.task('cleanDev', function() {
+gulp.task('cleandev', function() {
     del('dev');
 });
 

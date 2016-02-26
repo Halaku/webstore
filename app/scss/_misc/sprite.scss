@@ -1,0 +1,232 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$fb-footer-hover-name: 'fb-footer-hover';
+$fb-footer-hover-x: 93px;
+$fb-footer-hover-y: 0px;
+$fb-footer-hover-offset-x: -93px;
+$fb-footer-hover-offset-y: 0px;
+$fb-footer-hover-width: 43px;
+$fb-footer-hover-height: 43px;
+$fb-footer-hover-total-width: 305px;
+$fb-footer-hover-total-height: 278px;
+$fb-footer-hover-image: '/img/sprite.png';
+$fb-footer-hover: (93px, 0px, -93px, 0px, 43px, 43px, 305px, 278px, '/img/sprite.png', 'fb-footer-hover', );
+$fb-footer-name: 'fb-footer';
+$fb-footer-x: 186px;
+$fb-footer-y: 0px;
+$fb-footer-offset-x: -186px;
+$fb-footer-offset-y: 0px;
+$fb-footer-width: 43px;
+$fb-footer-height: 43px;
+$fb-footer-total-width: 305px;
+$fb-footer-total-height: 278px;
+$fb-footer-image: '/img/sprite.png';
+$fb-footer: (186px, 0px, -186px, 0px, 43px, 43px, 305px, 278px, '/img/sprite.png', 'fb-footer', );
+$fb-hover-name: 'fb-hover';
+$fb-hover-x: 279px;
+$fb-hover-y: 0px;
+$fb-hover-offset-x: -279px;
+$fb-hover-offset-y: 0px;
+$fb-hover-width: 26px;
+$fb-hover-height: 26px;
+$fb-hover-total-width: 305px;
+$fb-hover-total-height: 278px;
+$fb-hover-image: '/img/sprite.png';
+$fb-hover: (279px, 0px, -279px, 0px, 26px, 26px, 305px, 278px, '/img/sprite.png', 'fb-hover', );
+$fb-name: 'fb';
+$fb-x: 152px;
+$fb-y: 186px;
+$fb-offset-x: -152px;
+$fb-offset-y: -186px;
+$fb-width: 26px;
+$fb-height: 26px;
+$fb-total-width: 305px;
+$fb-total-height: 278px;
+$fb-image: '/img/sprite.png';
+$fb: (152px, 186px, -152px, -186px, 26px, 26px, 305px, 278px, '/img/sprite.png', 'fb', );
+$map-pin-name: 'map-pin';
+$map-pin-x: 61px;
+$map-pin-y: 262px;
+$map-pin-offset-x: -61px;
+$map-pin-offset-y: -262px;
+$map-pin-width: 11px;
+$map-pin-height: 16px;
+$map-pin-total-width: 305px;
+$map-pin-total-height: 278px;
+$map-pin-image: '/img/sprite.png';
+$map-pin: (61px, 262px, -61px, -262px, 11px, 16px, 305px, 278px, '/img/sprite.png', 'map-pin', );
+$phone-name: 'phone';
+$phone-x: 0px;
+$phone-y: 262px;
+$phone-offset-x: 0px;
+$phone-offset-y: -262px;
+$phone-width: 11px;
+$phone-height: 16px;
+$phone-total-width: 305px;
+$phone-total-height: 278px;
+$phone-image: '/img/sprite.png';
+$phone: (0px, 262px, 0px, -262px, 11px, 16px, 305px, 278px, '/img/sprite.png', 'phone', );
+$tw-footer-hover-name: 'tw-footer-hover';
+$tw-footer-hover-x: 186px;
+$tw-footer-hover-y: 93px;
+$tw-footer-hover-offset-x: -186px;
+$tw-footer-hover-offset-y: -93px;
+$tw-footer-hover-width: 43px;
+$tw-footer-hover-height: 43px;
+$tw-footer-hover-total-width: 305px;
+$tw-footer-hover-total-height: 278px;
+$tw-footer-hover-image: '/img/sprite.png';
+$tw-footer-hover: (186px, 93px, -186px, -93px, 43px, 43px, 305px, 278px, '/img/sprite.png', 'tw-footer-hover', );
+$tw-footer-name: 'tw-footer';
+$tw-footer-x: 0px;
+$tw-footer-y: 0px;
+$tw-footer-offset-x: 0px;
+$tw-footer-offset-y: 0px;
+$tw-footer-width: 43px;
+$tw-footer-height: 43px;
+$tw-footer-total-width: 305px;
+$tw-footer-total-height: 278px;
+$tw-footer-image: '/img/sprite.png';
+$tw-footer: (0px, 0px, 0px, 0px, 43px, 43px, 305px, 278px, '/img/sprite.png', 'tw-footer', );
+$tw-hover-name: 'tw-hover';
+$tw-hover-x: 0px;
+$tw-hover-y: 186px;
+$tw-hover-offset-x: 0px;
+$tw-hover-offset-y: -186px;
+$tw-hover-width: 26px;
+$tw-hover-height: 26px;
+$tw-hover-total-width: 305px;
+$tw-hover-total-height: 278px;
+$tw-hover-image: '/img/sprite.png';
+$tw-hover: (0px, 186px, 0px, -186px, 26px, 26px, 305px, 278px, '/img/sprite.png', 'tw-hover', );
+$tw-name: 'tw';
+$tw-x: 76px;
+$tw-y: 186px;
+$tw-offset-x: -76px;
+$tw-offset-y: -186px;
+$tw-width: 26px;
+$tw-height: 26px;
+$tw-total-width: 305px;
+$tw-total-height: 278px;
+$tw-image: '/img/sprite.png';
+$tw: (76px, 186px, -76px, -186px, 26px, 26px, 305px, 278px, '/img/sprite.png', 'tw', );
+$vk-footer-hover-name: 'vk-footer-hover';
+$vk-footer-hover-x: 93px;
+$vk-footer-hover-y: 93px;
+$vk-footer-hover-offset-x: -93px;
+$vk-footer-hover-offset-y: -93px;
+$vk-footer-hover-width: 43px;
+$vk-footer-hover-height: 43px;
+$vk-footer-hover-total-width: 305px;
+$vk-footer-hover-total-height: 278px;
+$vk-footer-hover-image: '/img/sprite.png';
+$vk-footer-hover: (93px, 93px, -93px, -93px, 43px, 43px, 305px, 278px, '/img/sprite.png', 'vk-footer-hover', );
+$vk-footer-name: 'vk-footer';
+$vk-footer-x: 0px;
+$vk-footer-y: 93px;
+$vk-footer-offset-x: 0px;
+$vk-footer-offset-y: -93px;
+$vk-footer-width: 43px;
+$vk-footer-height: 43px;
+$vk-footer-total-width: 305px;
+$vk-footer-total-height: 278px;
+$vk-footer-image: '/img/sprite.png';
+$vk-footer: (0px, 93px, 0px, -93px, 43px, 43px, 305px, 278px, '/img/sprite.png', 'vk-footer', );
+$vk-hover-name: 'vk-hover';
+$vk-hover-x: 279px;
+$vk-hover-y: 76px;
+$vk-hover-offset-x: -279px;
+$vk-hover-offset-y: -76px;
+$vk-hover-width: 26px;
+$vk-hover-height: 26px;
+$vk-hover-total-width: 305px;
+$vk-hover-total-height: 278px;
+$vk-hover-image: '/img/sprite.png';
+$vk-hover: (279px, 76px, -279px, -76px, 26px, 26px, 305px, 278px, '/img/sprite.png', 'vk-hover', );
+$vk-name: 'vk';
+$vk-x: 279px;
+$vk-y: 152px;
+$vk-offset-x: -279px;
+$vk-offset-y: -152px;
+$vk-width: 26px;
+$vk-height: 26px;
+$vk-total-width: 305px;
+$vk-total-height: 278px;
+$vk-image: '/img/sprite.png';
+$vk: (279px, 152px, -279px, -152px, 26px, 26px, 305px, 278px, '/img/sprite.png', 'vk', );
+$spritesheet-width: 305px;
+$spritesheet-height: 278px;
+$spritesheet-image: '/img/sprite.png';
+$spritesheet-sprites: ($fb-footer-hover, $fb-footer, $fb-hover, $fb, $map-pin, $phone, $tw-footer-hover, $tw-footer, $tw-hover, $tw, $vk-footer-hover, $vk-footer, $vk-hover, $vk, );
+$spritesheet: (305px, 278px, '/img/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Here are example usages in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+`display: inline-block` sprite:
+<img class="icon-home" />
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
