@@ -1,0 +1,34 @@
+$container-size: 1100px;
+$footer-height: 220px;
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	@extend html;
+	background-color: #f4f4f4;
+}
+
+.container {
+	margin: 0 auto;
+	width: $container-size;
+	@include clearfix;
+}
+
+.wrapper {
+	min-height: 100%;
+	margin-bottom: -$footer-height;
+	&:after {
+	@extend .footer;
+	content: "";
+	display: block;
+}
+}
+
+
+.footer {
+	height: $footer-height;
+}
+

@@ -1,0 +1,26 @@
+block currentPage
+	- var menuActive = 'Мобильные телефоны'
+	- var breadcrumbs = ['Главная', 'Каталог']
+
+extends ../main
+
+block title
+	|Мобильные телефоны
+
+block content
+	.content__wrapper
+		.container
+			h1.main-header= menuActive
+			include ../_common/aside
+			section.main-content
+				.options
+					.options__sorting
+						.options__sorting-text Сортировать по
+						select.options__sorting-select
+							- var options = ['По цене', 'По популярности']
+							each option in options
+								option.options__sorting-option= option
+
+					.options__display
+				.products
+			include ../_common/attention

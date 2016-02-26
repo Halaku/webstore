@@ -1,0 +1,7 @@
+block currentPage
+.breadcrumbs
+	.container
+		ul.breadcrumbs__list
+			each link, index in breadcrumbs
+				li.breadcrumbs__item
+					a(href="#" class="breadcrumbs__link #{(index == breadcrumbs.length -1) ? 'breadcrumbs__link_active' : ''}")= link
