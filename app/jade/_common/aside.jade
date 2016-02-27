@@ -4,59 +4,76 @@ aside.aside
 			- var categories = ['Флагманы', 'Бюджетная линейка']
 			each category in categories
 				li.categories__item
-					a(href="#")= category
+					a(href="#").categories__link= category
 	.filter
 		ul.filter__list
 			li.filter__item
 				.filter__header
-					a(href="#") Наличие в магазинах
+					a(href="#").filter__header-link Наличие в магазинах
 				.filter__content
-					ul.filter__radio-list
-						- var variants = ['Во всех магазинах', 'В ближайшем магазине']
+					ul.filter__select-list
+						- var variants = ['Во всех магазинах', 'В ближайшем ко мне магазине']
 						each variant in variants
-							li.filter__radio-item
-								input(type="radio").filter__radio-input
-								label.filter__radio-label= variant
+							li.filter__select-item
+								label.filter__select-label
+									input(type="radio" name="loaction").filter__select-input
+									.filter__select-elem
+									.filter__select-text= variant
+								
+
+
+
 			li.filter__item
 				.filter__header
-					a(href="#") Бренды
+					a(href="#").filter__header-link Бренды
 				.filter__content
-					ul.filter__checkbox-list
+					ul.filter__select-list.filter__select-list_checkbox
 						- var variants = ['Lenovo', 'Apple', 'Samsung', 'Asus', 'Motorola']
 						each variant in variants
-							li.filter__checkbox-item
-								input(type="checkbox").filter__checkbox-input
-								label.filter__checkbox-label= variant
+							li.filter__select-item
+								label.filter__select-label
+									input(type="checkbox").filter__select-input
+									.filter__select-elem
+									.filter__select-text= variant
 					a(href="#").filter__reset Сбросить фильтр
+
+
+
 			li.filter__item
 				.filter__header
-					a(href="#") Цена
+					a(href="#").filter__header-link Цена
 				.filter__content
 					.filter__slider
 						.filter__slider-from
-							.filter___slider-text от
+							.filter__slider-text от
 							input(type="text").filter__slider-input.filter__slider-input_from
 						.filter__slider-to
-							.filter___slider-text до 
+							.filter__slider-text до 
 							input(type="text").filter__slider-input.filter__slider-input_to
 						.filter__slider-block
+
+
 			li.filter__item
 				.filter__header
-					a(href="#") Цвет
+					a(href="#").filter__header-link Цвет
 				.filter__content
-					ul.filter__colors-list
-						- var colors = ['ffffff', 'cccccc', '000000', '0a3153', 'ff1800', 'fff343', 'fb914a', 'fb914a', '40a6ff', '9870ad', 'dc78ad', '7f401d']
+					ul.filter__select-list.filter__select-list_colors
+						- var colors = ['#ffffff', '#cccccc', '#000000', '#0a3153', '#ff1800', '#fff343', '#fb914a', '#92c37c', '#40a6ff', '#9870ad', '#dc78ad', '#7f401d']
 						each color in colors
-							li.filter__colors-item
-								a(href="#" style="background-color: #{color}").filter__color-link
+							li.filter__select-item
+								a(href="#" style="background-color: #{color}").filter__select-link
+
+
 			li.filter__item
 				.filter_header
-					a(href="#") Операционные системы
+					a(href="#").filter__header-link Операционные системы
 				.filter__content
-					ul.filter__checkbox-list
+					ul.filter__select-list.filter__select-list_checkbox
 						- var variants = ['Android', 'iOS', 'Windows Mobile', 'Symbian', 'Custom']
 						each variant in variants
-							li.filter__checkbox-item
-								input(type="checkbox").filter__checkbox-input
-								label.filter__checkbox-label= variant
+							li.filter__select-item
+								label.filter__select-label
+									input(type="checkbox").filter__select-input
+									.filter__select-elem
+									.filter__select-text= variant
 					a(href="#").filter__reset Сбросить фильтр

@@ -9,6 +9,7 @@ html {
 body {
 	@extend html;
 	background-color: #f4f4f4;
+	font-family: 	"open_sansregular";
 }
 
 .container {
@@ -16,6 +17,7 @@ body {
 	margin: 0 auto;
 	width: $container-size;
 	@include clearfix;
+	padding: 0 15px;
 }
 
 .wrapper {

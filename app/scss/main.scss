@@ -1,10 +1,9 @@
 $orange: #ff6e35;
 $bg-color: #f4f4f4;
 $light-blue: #e4ebee;
-$blue: #d9e5ea;
 $black: #333333;
 $white: #fbfbfb;
-
+$grey: #dee1e4;
 
 @import "_misc/fonts";
 @import "_misc/normalize";
@@ -14,3 +13,6 @@ $white: #fbfbfb;
 @import "_layout/basics";
 @import "_layout/header";
 @import "_layout/nav";
+@import "_layout/breadcrumbs";
+@import "_layout/index";
+@import "_layout/aside"; 

@@ -1,9 +1,13 @@
+.header {
+  min-width: $container-size+30;
+}
+
 .header__top {
   height: 79px;
   box-sizing: border-box;
   border-bottom: 2px solid #ebedef;
   background-color: $white;
-  min-width: $container-size;
+  
   padding: 25px 0;
 }
 
@@ -19,12 +23,12 @@
 
 .social__item {
   display: inline-block;
-  margin: 0 0 0 -4px;
-  padding: 0 0 0 15px;
+  
+  margin-left: 11px;
   list-style-type: none;
   &:first-child {
-    padding: 0;
-    margin: 0;
+    margin-left: 0;
+
   }
 }
 
@@ -119,8 +123,8 @@
   box-sizing: border-box;
   height: 34px;
   width: 293px;
-  border: 1px solid #dee1e4;
-  padding-left: 17px;
+  border: 1px solid $grey;
+  padding: 0 17px;
   font-size: .875rem;
   font-family: 'open_sanslight';
   color: #7f7f7f;

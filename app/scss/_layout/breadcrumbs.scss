@@ -1,0 +1,38 @@
+.breadcrumbs {
+  margin-bottom: 20px;
+  min-width: $container-size+30;
+}
+
+.breadcrumbs__list {
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+  
+  &:before {
+  	margin-right: 3px;
+    content: '>';
+  }
+  &:first-child {
+     &:before{
+      display: none;
+    }
+  }
+}
+
+.breadcrumbs__link {
+	color: 	$black;
+	font-family: 	"open_sansregular";
+	font-size: 0.875rem;
+	text-decoration: none;	
+	&:hover {
+		text-decoration: underline;	
+	}
+}
+
+.breadcrumbs__link_active {
+	text-decoration: underline;	
+	color: 	$orange;
+}
