@@ -1,18 +1,22 @@
 footer.footer
-	.footer__top
-		.container
-			.footer__left
-			.footer__right
-				ul.footer__social-list
-					- var icons = ['fb', 'vk', 'tw']
-					each icon in icons
-						li.footer__social-item
-							a(href="#" class="footer__social-link_#{icon}")
-				ul.footer__menu-list
-					- var links = ['Планшеты', 'Мобильные телефоны', 'Mp3 плееры', 'Персональные компьютеры', 'ноутбуки', 'Аксессуары', 'Бытовая техника']
-					each link in links
-						li.footer__menu-item
-							a(href="#").footer__menu-link= link
-	.footer__bottom
-		.container
-			.footer__copyright All rights reserved. 2015. No copy alowed
+	.footer__wrapper
+		.footer__top
+			.container
+				.footer__left
+					a(href="#").footer__logo-link
+						img(src="img/logo-footer.png", alt="Cooltech logo").footer__logo-img
+				.footer__right
+					ul.footer__social-list
+						- var icons = ['fb', 'vk', 'tw']
+						each icon in icons
+							li.footer__social-item
+								a(href="#" class="footer__social-link_#{icon}").footer__social-link
+					ul.footer__menu-list
+						- var links = ['Планшеты', 'Мобильные телефоны', 'Mp3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Аксессуары', 'Бытовая техника']
+						each link in links
+							li.footer__menu-item
+								a(href="#").footer__menu-link= link
+		.footer__bottom
+			.container
+				.test
+				.footer__copyright  All rights reserved. 2015. No copy alowed.

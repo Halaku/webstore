@@ -168,6 +168,9 @@
   color: #5db2fc;
   display: inline-block;
   margin-top: 9px;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .filter__slider {
