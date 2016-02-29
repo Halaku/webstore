@@ -24,7 +24,7 @@
 .social__item {
   display: inline-block;
   
-  margin-left: 11px;
+  margin-left: 16px;
   list-style-type: none;
   &:first-child {
     margin-left: 0;
@@ -87,7 +87,7 @@
   font-size: 1.125rem;
   color: $black;
   font-family: 'open_sanssemibold';
-  margin-left: 85px;
+  margin-left: 95px;
   text-decoration: none;
   &:before {
     display: inline-block;
@@ -151,7 +151,7 @@
 
 .menu {
 	float: right;
-	padding-top: 5px;
+	padding-top: 8px;
 
 }
 
@@ -162,7 +162,7 @@
 
 .menu__item {
 	display: inline-block;
-	margin-left: 28px;
+	margin-left: 33px;
 	
 	&:first-child {
 		margin: 0;

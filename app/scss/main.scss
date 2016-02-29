@@ -1,6 +1,5 @@
 $orange: #ff6e35;
 $bg-color: #f4f4f4;
-$light-blue: #e4ebee;
 $black: #333333;
 $white: #fbfbfb;
 $grey: #dee1e4;
@@ -14,7 +13,10 @@ $grey: #dee1e4;
 @import "_layout/header";
 @import "_layout/nav";
 @import "_layout/breadcrumbs";
-@import "_layout/index";
 @import "_layout/aside";
 @import "_layout/attention";
 @import "_layout/footer";
+@import "_layout/sorting";
+@import "_layout/products-big";
+@import "_layout/products-medium";
+@import "_layout/products-small";

@@ -1,0 +1,89 @@
+.display-small {
+	
+	.products__wrapper {
+		margin: 9px 16px 8px 12px;
+	}
+	
+	.products__left {
+		float: left;
+		width: 106px;
+
+	}
+	
+	.products__gallery {
+		display: none;
+	}
+
+	.products__code {
+		padding-top: 8px;
+	}
+
+	.products__middle {
+		float: none;
+		display: inline-block;
+		margin: 0 0 0 10px;
+		width: 283px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		
+	}
+
+	.products__name {
+		display: inline-block;
+		font-size: .875rem;
+		margin: 0;
+		padding-top: 8px;
+		&:before {
+			display: inline-block;
+			content: "Смартфон";
+			padding-right: 5px;
+		}
+	}
+
+	.products__descr {
+		display: none;
+	}
+
+	.products__rate {
+		display: none;
+	}
+
+	.products__right {
+		@include clearfix;
+		position: static;
+		float: right;
+		width: auto;
+		border: none;
+		text-align: left;
+		margin: 0 0 0 13px;
+		
+	}
+
+	.products__price {
+		float: left;
+		font-size: 1.125rem;
+		padding-top: 3px;
+	}
+
+	.products__right-bottom {
+		position: static;
+		display: inline-block;
+		@include clearfix;
+
+	}
+	
+	.products__button {
+		float: right;
+		margin: 0 0 0 20px;
+	}
+
+	.products__avaible {
+		float: left;
+		margin: 0 0 0 23px;
+		padding-top: 10px;
+	}
+
+
+
+}

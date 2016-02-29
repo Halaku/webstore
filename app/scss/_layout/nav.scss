@@ -19,7 +19,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: -5px;
 }
 
 .nav__link {
@@ -28,7 +27,7 @@
   font-family: 'open_sansregular';
   color: $black;
   text-decoration: none;
-  padding: 16px 15px 14px 15px;
+  padding: 16px 14.5px 14px 14.5px;
 
   &:hover {
     background-color: #e4e2e2;

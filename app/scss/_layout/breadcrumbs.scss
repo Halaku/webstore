@@ -14,6 +14,7 @@
   &:before {
   	margin-right: 3px;
     content: '>';
+    font-size: .875rem;
   }
   &:first-child {
      &:before{
@@ -26,7 +27,8 @@
 	color: 	$black;
 	font-family: 	"open_sansregular";
 	font-size: 0.875rem;
-	text-decoration: none;	
+	text-decoration: none;
+  margin-right: 3px;	
 	&:hover {
 		text-decoration: underline;	
 	}

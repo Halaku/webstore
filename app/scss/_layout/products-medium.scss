@@ -1,0 +1,159 @@
+.display-medium {
+  .products {
+  	border: none;
+  	border-radius: none;
+  }
+
+  .products__list {
+  	margin: 0 0 -19px -19px;
+  	font-size: 0;
+  }
+
+  .products__item {
+  	margin: 0 0 19px 19px;
+    width: 233px;
+    border: 1px solid $grey;
+    border-radius: 5px;
+    &:hover {
+      box-shadow: 0 1px 5.7px .3px rgba(118, 118, 118, .75);
+    }
+    &:last-child {
+    	border: 1px solid $grey;
+    }
+  }
+
+  .products__wrapper {
+  	margin: 19px 10px;
+  }
+
+  .products__left {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+		float: none;
+		margin-bottom: 13px;
+  }
+
+  .products__gallery {
+  	margin-bottom: 0px;
+  }
+
+  .products__gallery-img {
+    border: 1px solid $grey;
+    border-radius: 2px;
+    margin-bottom: 15px;
+  }
+  .products__gallery-list {
+    margin: 0 0 0 -18px;
+    padding: 0;
+  }
+
+  .products__gallery-item {
+    display: inline-block;
+    margin: 0 0 0 18px;
+    padding: 0;
+    list-style: none;
+    height: 32px;
+    width: 32px;
+  }
+
+  .products__gallery-thumb {
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid $white;
+    transition: all .1s;
+    &_active {
+      border: 1px solid $orange;
+    }
+    &:hover {
+      border: 1px solid $orange;
+    }
+  }
+
+  .products__code {
+  	display: none;
+  }
+
+  .products__middle {
+  	display: inline-block;
+  	text-align: center;
+  	float: none;
+  	margin: 0 0 7px 0;
+  	width: 100%;
+  }
+	
+	.products__name {
+		font-size: .875rem;
+		margin: 0 0 5px 0;
+		height: 37px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+
+	.products__descr {
+		margin-bottom: 7px;
+	}
+
+  .products__descr-text {
+  	display: none;
+  }
+
+  .products__descr-list {
+  	display: block;
+  	margin: 0;
+  	padding: 0;
+  }
+	
+	.products__descr-item {
+		@include clearfix;
+		display: block;
+		margin: 0;
+		height: 20px;
+		width: 100%;
+		background-color: #e6e6ee;
+		font-family: "open_sansregular";
+		font-size: .875rem;
+		color: $black;
+		&:nth-child(2n) {
+			background: none;
+		}
+	}
+
+	.products__descr-key {
+		float: left;
+		margin-left: 2px;
+	}
+
+	.products__descr-value {
+		float: right;
+		margin-right: 2px;
+	}
+
+	.products__right {
+		display: inline-block;
+		text-align: center;
+		position: static;
+		width: 100%;
+		border: none;
+		margin: 0;
+	}
+	
+	.products__price {
+		margin-bottom: 3px;
+	}
+	
+	.products__right-bottom {
+		position: static;
+		@include clearfix;
+	}
+
+	.products__button {
+		float: right;
+		margin: 0 2px 0 0;
+	}
+
+	.products__avaible {
+		float: left;
+		margin: 7px 0 0 10px;
+	}
+}

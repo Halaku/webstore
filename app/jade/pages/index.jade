@@ -11,7 +11,7 @@ block content
 	.container
 		h1.main-header= menuActive
 		include ../_common/aside
-		section.main-content
+		section.main-content.display-big
 			.options
 				.options__sorting
 					.options__sorting-text Сортировать по
@@ -20,5 +20,47 @@ block content
 						each option in options
 							option.options__sorting-option= option
 				.options__display
+					ul.options__display-list
+						-var options = ['big', 'medium', 'small']
+						each option in options
+							li.options__display-item
+								a(href="#" class="options__display-link_#{option}").options__display-link
+					.options__display-text Вид каталога
 			.products
-		
+				ul.products__list
+					- for (i = 1; i <= 9; i++)
+						li.products__item
+							.products__wrapper
+								.products__left
+									.products__gallery
+										img(src="http://lorempixel.com/134/134/technics/#{i}", alt="phone img").products__gallery-img
+										ul.products__gallery-list
+											- for (j = 0; j < 3; j++)
+												li.products__gallery-item
+													a.products__gallery-link
+														img(src="http://lorempixel.com/134/134/technics/#{i+j}", alt="phone img thumb" class="#{(j == 0) ? 'products__gallery-thumb_active' : ''}").products__gallery-thumb
+									.products__code
+										.products__code-title Артикул
+										.products__code-number #{312456+i}
+								.products__middle
+									.products__name Samsung GT-I9301I GALAXY S#{i}
+									.products__descr
+										ul.products__descr-list
+											- var stats = {'Тип сим-карты' : 'Micro-SIM', 'Количество сим-карт' : '1', 'Цвет' : 'Белый', 'ОС' : 'Android', 'Связь 3G' : 'Есть', '4G (LTE)' : 'нет', 'GPS-модуль' : 'есть'}
+											each value, key in stats
+												li.products__descr-item
+													.products__descr-key= key
+													.products__descr-value= value
+										.products__descr-text Смартфон Samsung GT-I9301I GALAXY S#{i} Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора #{i}, Частота процессора 1400 МГц
+									.products__rate
+										.products__star.products__star_filled
+										.products__star.products__star_filled
+										.products__star.products__star_filled
+										.products__star.products__star_filled
+										.products__star
+										.products__star-number 4
+								.products__right
+									.products__price #{i}1 290
+									.products__right-bottom
+										input(type="button", value="В корзину").products__button
+										.products__avaible В наличии
