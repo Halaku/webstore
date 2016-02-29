@@ -25,5 +25,9 @@
     "gulp-jade": "^1.1.0",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.2.0"
+  },
+  "dependencies": {
+    "gulp-if": "^2.0.0",
+    "gulp.spritesmith": "^6.2.0"
   }
 }
