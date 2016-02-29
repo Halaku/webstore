@@ -3,4 +3,5 @@
 1. git clone https://github.com/Halaku/webstore.git webstore
 2. cd webstore
 3. npm i
+4. gulp build
 4. gulp

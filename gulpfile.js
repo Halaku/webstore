@@ -90,5 +90,11 @@ gulp.task('cleandev', function() {
     del('dev');
 });
 
+gulp.task('build', ['sprite'], function() {
+	gulp.start('images');
+	gulp.start('fonts');
+	gulp.start('css');
+	gulp.start('jade');
+});
 
 gulp.task('default', ['server', 'watch']);
