@@ -64,3 +64,16 @@ block content
 									.products__right-bottom
 										input(type="button", value="В корзину").products__button
 										.products__avaible В наличии
+			.pager
+				ul.pager__list
+					li.pager__item.pager__item_prev
+						a(href="#").pager__link 
+							.pager__mark
+					- var pages = ['1', '2', '3']
+					each page in pages
+						li(class="pager__item #{(page == '1') ? 'pager__item_active' : ''}")
+							a(href="#").pager__link
+								.pager__mark= page
+					li.pager__item.pager__item_next
+						a(href="#").pager__link
+							.pager__mark
