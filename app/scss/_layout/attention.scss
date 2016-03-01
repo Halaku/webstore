@@ -1,11 +1,26 @@
 .attention {
 	.main-header {
-		margin-bottom: 17px;
+		margin-bottom: 3px;
 	}
 	p {
 		font-family: "open_sansregular";
 		font-size: 0.875rem;
 		color: $black;
 		margin-bottom: 20px;
+		text-indent: 37px;
+		line-height: 20px;
+	}
+
+	.column {
+		&.first {
+			width: 530px !important;
+			text-align: justify !important;
+			margin-right: 40px;
+		}
+		&.last {
+			width: 530px !important;
+			text-align: justify !important;
+		}
 	}
 }
+

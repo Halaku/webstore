@@ -4,10 +4,16 @@ $black: #333333;
 $white: #fbfbfb;
 $grey: #dee1e4;
 
+// @import "_plagins/core";
+
+
 @import "_misc/fonts";
 @import "_misc/normalize";
 @import "_misc/mixins";
 @import "_misc/sprite";
+
+@import "_plugins/jquery-ui";
+@import "_plugins/select2";
 
 @import "_layout/basics";
 @import "_layout/header";
@@ -20,3 +26,6 @@ $grey: #dee1e4;
 @import "_layout/products-big";
 @import "_layout/products-medium";
 @import "_layout/products-small";
+
+@import "_widget/slider";
+@import "_widget/select";

@@ -1,0 +1,22 @@
+.ui-corner-all {
+  border-radius: 0;
+  border: none;
+}
+
+.ui-slider-horizontal {
+  height: 3px;
+  margin-bottom: 15px;
+  cursor: pointer;
+
+  .ui-slider-range {
+    background: $orange;
+  }
+
+  .ui-slider-handle {
+    @include sprite($slider-mark);
+    border: none;
+    top: 2px;
+    margin-left: -4px;
+    cursor: pointer;
+  }
+}

@@ -24,7 +24,7 @@ block content
 						-var options = ['big', 'medium', 'small']
 						each option in options
 							li.options__display-item
-								a(href="#" class="options__display-link_#{option}").options__display-link
+								a(href="#" data-view = "#{option}" class="options__display-link_#{option}").options__display-link
 					.options__display-text Вид каталога
 			.products
 				ul.products__list
@@ -36,9 +36,9 @@ block content
 										img(src="http://lorempixel.com/134/134/technics/#{i}", alt="phone img").products__gallery-img
 										ul.products__gallery-list
 											- for (j = 0; j < 3; j++)
-												li.products__gallery-item
+												li(class="#{(j == 0) ? 'products__gallery-item_active' : ''}").products__gallery-item
 													a.products__gallery-link
-														img(src="http://lorempixel.com/134/134/technics/#{i+j}", alt="phone img thumb" class="#{(j == 0) ? 'products__gallery-thumb_active' : ''}").products__gallery-thumb
+														img(src="http://lorempixel.com/134/134/technics/#{i+j}", alt="phone img thumb" ).products__gallery-thumb
 									.products__code
 										.products__code-title Артикул
 										.products__code-number #{312456+i}

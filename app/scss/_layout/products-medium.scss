@@ -5,12 +5,12 @@
   }
 
   .products__list {
-  	margin: 0 0 -19px -19px;
+  	margin: 0 0 -18px -18px;
   	font-size: 0;
   }
 
   .products__item {
-  	margin: 0 0 19px 19px;
+  	margin: 0 0 18px 18px;
     width: 233px;
     border: 1px solid $grey;
     border-radius: 5px;
@@ -53,21 +53,12 @@
     margin: 0 0 0 18px;
     padding: 0;
     list-style: none;
-    height: 32px;
-    width: 32px;
+    height: 30px;
+    width: 30px;
   }
 
   .products__gallery-thumb {
     width: 100%;
-    border-radius: 2px;
-    border: 1px solid $white;
-    transition: all .1s;
-    &_active {
-      border: 1px solid $orange;
-    }
-    &:hover {
-      border: 1px solid $orange;
-    }
   }
 
   .products__code {

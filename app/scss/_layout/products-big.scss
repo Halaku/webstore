@@ -3,7 +3,7 @@
   margin-bottom: 66px;
   border: 1px solid $grey;
   border-radius: 5px;
-  width: 743px;
+  width: 741px;
 }
 
 .products__list {
@@ -62,21 +62,20 @@
   margin: 0 0 0 18px;
   padding: 0;
   list-style: none;
-  height: 32px;
-  width: 32px;
-}
-
-.products__gallery-thumb {
-  width: 100%;
-  border-radius: 2px;
+  height: 30px;
+  width: 30px;
   border: 1px solid $white;
-  transition: all .1s;
+  border-radius: 2px;
   &_active {
     border: 1px solid $orange;
   }
   &:hover {
     border: 1px solid $orange;
   }
+}
+
+.products__gallery-thumb {
+  width: 100%; 
 }
 
 .products__code {
