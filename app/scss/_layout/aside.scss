@@ -184,11 +184,11 @@
       @include sprite($check);
     }
   }
-  // .filter__select-label:hover {
-  //  .filter__select-input:not(checked)+.filter__select-elem:after {
-  //    @include sprite($check-hover);
-  //  }
-  // }
+  .filter__select-label:hover {
+  .filter__select-input:not(:checked)+.filter__select-elem:after {
+      @include sprite($check-hover);
+    }
+   }
 }
 
 .filter__reset {
@@ -263,6 +263,7 @@
   }
 
   .filter__select-link {
+    cursor: pointer;
     box-sizing: border-box;
     display: inline-block;
     width: 37px;

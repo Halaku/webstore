@@ -68,7 +68,7 @@ var changeView = (function() {
 var slideshow = (function() {
     var slideshow = (function($this) {
         var thumbPath = $this.children('.products__gallery-thumb').attr('src'),
-            image = $this.closest('.products__gallery').children('.products__gallery-img');
+            image = $this.closest('.products__gallery').find('.products__gallery-img');
         $this.parent()
             .siblings('.products__gallery-item')
             .removeClass('products__gallery-item_active');

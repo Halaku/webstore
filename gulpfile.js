@@ -12,7 +12,7 @@ var mainBowerFiles = require('main-bower-files');
 
 gulp.task('mainfiles', function() {
     return gulp.src(mainBowerFiles())
-        .pipe(gulpif('*.js', gulp.dest('./app/js/')));
+        .pipe(gulpif('*.js', gulp.dest('./dev/js/')));
 });
 
 gulp.task('js', function() {
@@ -75,6 +75,11 @@ gulp.task('images', function() {
 gulp.task('fonts', function() {
     gulp.src('./app/fonts/*.*')
         .pipe(gulp.dest('./dev/fonts'));
+});
+
+gulp.task('favicon', function() {
+    gulp.src('./app/*.*')
+        .pipe(gulp.dest('./dev/'));
 });
 
 gulp.task('server', function() {

@@ -50,7 +50,7 @@ aside.aside
 							.filter__slider-to
 								.filter__slider-text до 
 								input(type="text").filter__slider-input.filter__slider-input_to
-						div(data-min="0" data-max="100000").filter__slider-block
+						div(data-min="0" data-max="1000").filter__slider-block
 
 			li.filter__item
 				.filter__header
@@ -60,7 +60,7 @@ aside.aside
 						- var colors = ['#ffffff', '#cccccc', '#000000', '#0a3153', '#ff1800', '#fff343', '#fb914a', '#92c37c', '#40a6ff', '#9870ad', '#dc78ad', '#7f401d']
 						each color in colors
 							li.filter__select-item
-								a(href="#" style="background-color: #{color}").filter__select-link
+								a(style="background-color: #{color}").filter__select-link
 
 
 			li.filter__item

@@ -33,7 +33,8 @@ block content
 							.products__wrapper
 								.products__left
 									.products__gallery
-										img(src="http://lorempixel.com/134/134/technics/#{i}", alt="phone img").products__gallery-img
+										.products__gallery-image
+											img(src="http://lorempixel.com/134/134/technics/#{i}", alt="phone img").products__gallery-img
 										ul.products__gallery-list
 											- for (j = 0; j < 3; j++)
 												li(class="#{(j == 0) ? 'products__gallery-item_active' : ''}").products__gallery-item

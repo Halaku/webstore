@@ -38,24 +38,6 @@
   	margin-bottom: 0px;
   }
 
-  .products__gallery-img {
-    border: 1px solid $grey;
-    border-radius: 2px;
-    margin-bottom: 15px;
-  }
-  .products__gallery-list {
-    margin: 0 0 0 -18px;
-    padding: 0;
-  }
-
-  .products__gallery-item {
-    display: inline-block;
-    margin: 0 0 0 18px;
-    padding: 0;
-    list-style: none;
-    height: 30px;
-    width: 30px;
-  }
 
   .products__gallery-thumb {
     width: 100%;
@@ -105,6 +87,8 @@
 		font-family: "open_sansregular";
 		font-size: .875rem;
 		color: $black;
+    text-overflow: ellipsis;
+    overflow: hidden;
 		&:nth-child(2n) {
 			background: none;
 		}
