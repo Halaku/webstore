@@ -1,3 +1,4 @@
+// reset checkboxes
 var reset = (function() {
     var reset = (function($this) {
         var container = $this.closest('.filter__item'),
@@ -16,15 +17,25 @@ var reset = (function() {
     };
 })();
 
+//price slider
 var slider = (function() {
-    var sendValues = function($this) {
+    var from = $('.filter__slider-input_from'),
+        to = $('.filter__slider-input_to');
+
+    function sendValues($this) {
         var container = $this.closest('.filter__slider'),
-            from = $('.filter__slider-input_from'),
-            to = $('.filter__slider-input_to'),
+
             values = $this.slider('option', 'values');
         from.val(values[0]);
         to.val(values[1]);
-    };
+    }
+
+    function recieveValues($this) {
+        $this.slider({
+            values: [from.val(), to.val()]
+        });
+    }
+
     return {
         init: function() {
             $('.filter__slider-block').each(function() {
@@ -41,13 +52,23 @@ var slider = (function() {
                     },
                     create: function() {
                         sendValues($this);
+                    },
+                    change: function() {
+                        sendValues($this);
                     }
                 });
+                from.on('change', function() {
+                    recieveValues($this);
+                });
+                to.on('change', function() {
+                    recieveValues($this);
+                }); //set slider handlers on input values
             });
         }
     };
 })();
 
+// func to change view of catalog
 var changeView = (function() {
     var changeView = (function($this) {
         var view = $this.data('view');
@@ -65,6 +86,7 @@ var changeView = (function() {
     };
 })();
 
+// function for slideshow
 var slideshow = (function() {
     var slideshow = (function($this) {
         var thumbPath = $this.children('.products__gallery-thumb').attr('src'),
@@ -90,6 +112,7 @@ var slideshow = (function() {
     };
 })();
 
+//accordion ralization
 var accordion = (function() {
     var accordion = (function($this) {
         var container = $this.closest('.filter__item'),
@@ -123,9 +146,14 @@ var accordion = (function() {
     };
 })();
 
-$('.attention__text').columnize({ width: 500 });
+//setup for columnize
+$('.attention__text').columnize({
+    width: 500
+});
 
+//run all js by the end of rendering
 $(document).ready(function() {
+    //select menu stilization
     if ($('.options__sorting-select').length) {
         $('.options__sorting-select').select2({
             minimumResultsForSearch: Infinity
