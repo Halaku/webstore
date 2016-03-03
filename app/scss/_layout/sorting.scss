@@ -8,10 +8,11 @@
 
 .main-content {
   float: right;
-  width: 741px;
+  width: 743px;
 }
 
 .options {
+  box-sizing: border-box;
   position: relative;
   width: 100%;
   background-color: #e4ebee;

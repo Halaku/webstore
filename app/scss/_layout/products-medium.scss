@@ -10,8 +10,9 @@
   }
 
   .products__item {
+    box-sizing: border-box;
   	margin: 0 0 18px 18px;
-    width: 233px;
+    width: 235px;
     border: 1px solid $grey;
     border-radius: 5px;
     &:hover {
