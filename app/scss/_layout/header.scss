@@ -3,7 +3,7 @@
 }
 
 .header__top {
-  height: 79px;
+  
   box-sizing: border-box;
   border-bottom: 2px solid #ebedef;
   background-color: $white;
@@ -102,16 +102,19 @@
 .header__bottom {
   box-sizing: border-box;
   padding: 28px 0;
-  height: 94px;
   min-width: $container-size;
 }
 
 .logo__link {
   float: left;
-  height: 35px;
-  width: 237px;
+  display: block;
 }
 
+.logo__img {
+  display: block;
+  max-width: 237px;
+  max-height: 35px;
+}
 .logo__text {
   position: absolute;
   left: -9999px;

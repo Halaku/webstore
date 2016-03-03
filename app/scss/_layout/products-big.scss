@@ -62,12 +62,13 @@
 }
 
 .products__gallery-item {
+  box-sizing: border-box;
   display: inline-block;
   margin: 0 0 0 20px;
   padding: 0;
   list-style: none;
-  height: 30px;
-  width: 30px;
+  height: 32px;
+  width: 32px;
   border: 1px solid $white;
   border-radius: 2px;
 
@@ -84,7 +85,10 @@
 
 .products__gallery-thumb {
   width: 100%;
-  cursor: pointer;
+}
+
+.products__gallery-link {
+  display: block;
 }
 
 .products__code {

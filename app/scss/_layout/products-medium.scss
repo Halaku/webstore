@@ -79,9 +79,9 @@
 	
 	.products__descr-item {
 		@include clearfix;
-		display: block;
+		display: inline-block;
 		margin: 0;
-		height: 20px;
+	
 		width: 100%;
 		background-color: #e6e6ee;
 		font-family: "open_sansregular";
@@ -94,15 +94,22 @@
 		}
 	}
 
-	.products__descr-key {
-		float: left;
-		margin-left: 2px;
-	}
+	  .products__descr-key {
+    text-align: left;
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-	.products__descr-value {
-		float: right;
-		margin-right: 2px;
-	}
+  .products__descr-value {
+    text-align: right;
+    float: right;
+    width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
 
 	.products__right {
 		display: inline-block;

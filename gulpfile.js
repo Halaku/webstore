@@ -78,7 +78,7 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('favicon', function() {
-    gulp.src('./app/*.*')
+    gulp.src('./app/img/favicon/*.*')
         .pipe(gulp.dest('./dev/'));
 });
 
@@ -107,7 +107,8 @@ gulp.task('cleandev', function() {
 });
 
 gulp.task('build', ['sprite', 'mainfiles'], function() {
-	gulp.start('images');
+    gulp.start('images');
+	gulp.start('favicon');
 	gulp.start('fonts');
 	gulp.start('css');
     gulp.start('jade');
